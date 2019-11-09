@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # artists HAVE MANY songs
 # song BELONGS TO an artist
 
@@ -32,3 +33,24 @@ class Artist
     end
     
 end 
+=======
+class Artist 
+  attr_accessor :name, :songs
+  
+  #@@song_count = 0
+  
+  def initialize(name)
+    @name = name
+    @songs = []
+  end
+  
+  def add_song(song)
+     @songs << song
+  end
+  
+  def songs
+    @songs
+  end
+  
+end 
+>>>>>>> 8f8a4a0dfe5bc435cea347abb32fe9e3d2e2c6fd
